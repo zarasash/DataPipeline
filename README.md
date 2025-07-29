@@ -29,10 +29,10 @@ This project involved building a new data pipeline to support cross-functional i
 
 
 <h2>Process walk-through:</h2>
-- Staging Table <br />
-- Prod Table<br />
-- Base Table <br />
-- Daily Comparison Period for Looker <br />
+- [Staging Table]() <br /> 
+- [Prod Table]()<br />
+- [Base Table]() <br />
+- [Daily Comparison Period for Looker]() <br />
 <p align="center">
 Snapshot of Looker filters: <br/>
 <img src="https://drive.google.com/drive/folders/18s09EDWa0qJ0AlojW4UtiEjrTdmd22la" height="80%" width="80%" alt="Disk Sanitization Steps"/>
