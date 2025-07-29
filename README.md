@@ -27,12 +27,11 @@ This project involved building a new data pipeline to support cross-functional i
 - SQL (ETL logic for staging & prod tables)<br />
 - Looker (daily reporting/dashboard layer)<br />
 
-
-<h2>Process walk-through:</h2>
-- [Staging Table](https://github.com/zarasash/DataPipeline/blob/main/apple_news_staging_pipeline.sql) <br /> 
-- [Prod Table]()<br />
-- [Base Table]() <br />
-- [Daily Comparison Period for Looker]() <br />
+## Process Walk-Through:
+- [Staging Table](https://github.com/zarasash/DataPipeline/blob/main/apple_news_staging_pipeline.sql)
+- [Production Table Query](https://github.com/zarasash/DataPipeline/blob/main/apple_news_prod_table.sql)
+- [Base Data Preparation](https://github.com/zarasash/DataPipeline/blob/main/apple_news_combined_base_table.sql)
+- [Looker Dashboard for Daily Comparisons](https://github.com/zarasash/DataPipeline/blob/main/apple_news_daily_table_for_looker.sql)
 <p align="center">
 Snapshot of Looker filters: <br/>
 <img src="https://drive.google.com/drive/folders/18s09EDWa0qJ0AlojW4UtiEjrTdmd22la" height="80%" width="80%" alt="Disk Sanitization Steps"/>
