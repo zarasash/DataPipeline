@@ -33,8 +33,7 @@ This project involved building a new data pipeline to support cross-functional i
 - [Base Data Preparation](https://github.com/zarasash/DataPipeline/blob/main/apple_news_combined_base_table.sql)
 - [Looker Table for Daily Comparisons](https://github.com/zarasash/DataPipeline/blob/main/apple_news_daily_table_for_looker.sql)
 <p align="center">
-Snapshot of Looker filters: <br/>
-<img src="https://github.com/zarasash/DataPipeline/blob/main/apple%20news%20dashboard%20filters.png"/>
+
 <br />
 
 
