@@ -34,7 +34,7 @@ This project involved building a new data pipeline to support cross-functional i
 - [Looker Dashboard for Daily Comparisons](https://github.com/zarasash/DataPipeline/blob/main/apple_news_daily_table_for_looker.sql)
 <p align="center">
 Snapshot of Looker filters: <br/>
-<img src="https://drive.google.com/drive/folders/18s09EDWa0qJ0AlojW4UtiEjrTdmd22la" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/zarasash/DataPipeline/blob/main/apple%20news%20dashboard%20filters.png"/>
 <br />
 
 
