@@ -29,7 +29,7 @@ This project involved building a new data pipeline to support cross-functional i
 
 
 <h2>Process walk-through:</h2>
-- [Staging Table]() <br /> 
+- [Staging Table](https://github.com/zarasash/DataPipeline/blob/main/apple_news_staging_pipeline.sql) <br /> 
 - [Prod Table]()<br />
 - [Base Table]() <br />
 - [Daily Comparison Period for Looker]() <br />
