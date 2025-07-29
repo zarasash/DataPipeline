@@ -31,11 +31,11 @@ This project involved building a new data pipeline to support cross-functional i
 <h2>Process walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
+Creating STaging table: <br/>
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
+Creating Prod Table:  <br/>
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
