@@ -1,33 +1,31 @@
+-- Anonymized Production Data Table
+-- This SQL query represents a generalized and anonymized view of a production data table.
+-- It aggregates key metrics from a staging area for reporting or further analysis.
+-- The specific business context, table names, and column names have been replaced
+-- with generic terms to ensure anonymity.
 
--- Apple News Production Table (Converted from Dataform SQLX)
--- Description: Apple News Stats production
-
--- NOTE:
--- The `pre_operations` logic for deleting overlapping dates during incremental runs
--- should be handled in orchestration or staging prior to final table write.
-
-SELECT 
-  date,
-  ingestionDate,
-  site,
-  country,
-  deviceType,
-  referralSource,
-  appleArticleId,
-  appleArticleUrl,
-  appleContentType,
-  appleArticleTitle,
-  isPromoted,
-  isSponsored,
-  isPaywalled,
-  isAudioArticle,
-  hasVideo,
-  userid,
-  subscribertype,
-  viewid,
-  SUM(affiliateClicks) AS affiliateClicks,
-  SUM(engagedtime) AS engagedTime
-FROM `apple_news_staging`
-WHERE ingestionDate >= "2022-10-01"
-  AND ingestionDate BETWEEN @apple_news_traffic_start AND @apple_news_traffic_end
+SELECT
+  event_date,
+  processing_date,
+  entity,
+  region,
+  device_category,
+  traffic_source,
+  unique_content_id,
+  content_url,
+  content_category,
+  content_title,
+  is_promotional,
+  is_sponsored,
+  is_gated,
+  is_multimedia,
+  has_video,
+  user_identifier,
+  user_segment,
+  session_identifier,
+  SUM(interaction_clicks) AS total_interaction_clicks,
+  SUM(engagement_duration) AS total_engagement_duration
+FROM `staged_data_source`
+WHERE processing_date >= "2022-10-01" -- Example: Filtering data from a specific historical point
+  AND processing_date BETWEEN @data_pipeline_start_date AND @data_pipeline_end_date
 GROUP BY ALL;
