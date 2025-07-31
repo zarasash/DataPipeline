@@ -49,8 +49,7 @@ This project simulates a full-stack data pipeline for aggregating and analyzing 
 <p align="center">
 
 <h2>📝 Disclaimer</h2>
-This project is a sanitized version of a real-world enterprise pipeline. All datasets and references have been anonymized and generalized for portfolio sharing.
-<br />
+This project demonstrates a generalized data pipeline inspired by common analytics patterns. It does not use any proprietary code, datasets, or confidential logic.<br />
 
 
 <!--
