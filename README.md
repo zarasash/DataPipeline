@@ -43,8 +43,8 @@ This project simulates a full-stack data pipeline for aggregating and analyzing 
 
 ## Process Walk-Through:
 - [Staging Table](https://github.com/zarasash/DataPipeline/blob/main/apple_news_staging_pipeline.sql)
-- [Bridge Table from Staging to production](https://github.com/zarasash/DataPipeline/blob/main/apple_news_prod_table.sql)
-- [Code table](https://github.com/zarasash/DataPipeline/blob/main/apple_news_combined_base_table.sql)
+- [Bridge Table from Staging to Production](https://github.com/zarasash/DataPipeline/blob/main/apple_news_prod_table.sql)
+- [Core table](https://github.com/zarasash/DataPipeline/blob/main/apple_news_combined_base_table.sql)
 - [Looker version Table for Daily Comparisons](https://github.com/zarasash/DataPipeline/blob/main/apple_news_daily_table_for_looker.sql)
 <p align="center">
 
