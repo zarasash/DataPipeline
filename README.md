@@ -1,9 +1,7 @@
-<h1>Creating DataPipeline</h1>
-
-
+<h1>Apple News Engagement and Monetization Pipeline</h1>
 
 <h2>🧠 Project Overview</h2>
-This project involved building a new data pipeline to support cross-functional insights across Apple News, e-commerce (ecom), and advertising (ads) data sources. The goal was to empower the editorial team with data-driven guidance for optimizing and customizing Apple News content.
+This project simulates a full-stack data pipeline for aggregating and analyzing user engagement, ad revenue, and ecommerce activity from a content platform (modeled on Apple News). Built using SQL for BigQuery with modular transformation layers, it is designed to be scalable, modular, and ready for dashboarding.
 <br />
 
 <h2>🎯 Objectives</h2>
@@ -11,21 +9,37 @@ This project involved building a new data pipeline to support cross-functional i
 - Enable combined analysis of Apple News, ecom, and ads datasets<br />
 - Support editorial decision-making for content optimization, updates, and customization<br />
 
+
 <h2>🔧 What I Built</h2>
 - Created staging and production tables in the data warehouse for Apple News content<br />
-- Combined Apple News data with: E-commerce tables (Clicks, Revenue) & Ads tables (Impressions, clicks, Revenue)<br />
+- Joins user behavior with ecommerce and advertising revenue data<br />
+- Applies incremental loading and historical comparisons (1, 2, 4, and 52 weeks ago)<br />
 - Built a final daily summary table for Looker production (BI dashboard integration)<br />
 
+<h2>🧠 Key Metrics Tracked</h2>
+
+⦁	Users (total, subscribed, non-subscribed)<br />
+⦁	Page views and unique views<br />
+⦁	Total engaged time<br />
+⦁	Affiliate link clicks<br />
+⦁	Ecommerce revenue (USD/GBP, order values, transactions)<br />
+⦁	Ad impressions and revenue (daily & monthly, USD/GBP)<br />
+⦁	Historical benchmarks (1, 2, 4, 52 weeks ago)<br />
+
+
 <h2>📈 Business Impact</h2>
-- This pipeline allows editors and content strategists to:<br />
-- See which Brand drive product interest or revenue<br />
-- Understand how ad performance correlates with Brand<br />
-- Make better-informed decisions about what to feature, promote, or retire<br />
+ ✅ Centralizes multiple monetization sources (ads + affiliate revenue)<br />
+ ✅ Enables content teams to assess brand performance over time<br />
+ ✅ Provides finance with currency-adjusted revenue figures<br />
+	✅ Reduces manual reporting work with automation and comparison logic<br />
+	✅ Supports decision-making on paywalled vs. sponsored content<br />
+	✅ Aligns audience engagement metrics with ecommerce ROI<br />
+
 
 <h2>🛠 Tools & Stack</h2>
-- Data Warehouse : BigQuery <br />
-- SQL (ETL logic for staging & prod tables)<br />
-- Looker (daily reporting/dashboard layer)<br />
+⦁	SQL (BigQuery)<br />
+⦁	Dataform / SQLX-style transformations<br />
+⦁	Partitioning, clustering, and incremental loads<br />
 
 ## Process Walk-Through:
 - [Staging Table](https://github.com/zarasash/DataPipeline/blob/main/apple_news_staging_pipeline.sql)
@@ -34,6 +48,8 @@ This project involved building a new data pipeline to support cross-functional i
 - [Looker Table for Daily Comparisons](https://github.com/zarasash/DataPipeline/blob/main/apple_news_daily_table_for_looker.sql)
 <p align="center">
 
+<h2>📝 Disclaimer</h2>
+This project is a sanitized version of a real-world enterprise pipeline. All datasets and references have been anonymized and generalized for portfolio sharing.
 <br />
 
 
